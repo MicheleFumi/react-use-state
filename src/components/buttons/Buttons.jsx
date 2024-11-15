@@ -37,7 +37,7 @@ export default function Buttons() {
 
                 <div className={style.card}>
                     <div className={selected == null ? '' : `${style.hide}`}>nessun linguaggio selezionato</div>
-                    {languages.map(language => <div key={language.id} className={selected == language.id ? `${style.cardTitle}` : `${style.hide}`}>{language.title}</div>)}
+                    {languages.map(language => <h2 key={language.id} className={selected == language.id ? `${style.cardTitle}` : `${style.hide}`}>{language.title}</h2>)}
                     {languages.map(language => <div key={language.id} className={selected == language.id ? `${style.cardDescription}` : `${style.hide}`}>{language.description}</div>)}
                 </div>
             </div>
