@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+h1 {
+  padding: 2rem 1rem;
+}
+
+
+footer {
+  padding: 2rem 1rem;
+}
