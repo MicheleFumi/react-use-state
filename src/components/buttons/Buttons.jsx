@@ -8,10 +8,9 @@ export default function Buttons() {
         const newSelected = Number(e.target.getAttribute('data-index'))
         setSelected(newSelected)
 
-    }
-    function handleHover(e) {
 
     }
+
 
     return (
 
@@ -19,20 +18,20 @@ export default function Buttons() {
         <>
             <div className="container">
                 {languages.map(language =>
-                    <>
-                        <button onClick={handleClick}
-                            data-index={language.id}
-                            className={selected == language.id ? `${style.selected}` : `${style.button}`}
 
-                            key={language.id}
+                    <button onClick={handleClick}
+                        data-index={language.id}
+                        className={selected == language.id ? `${style.selected}` : `${style.button} ${style[language.title]}`}
 
-
-                        >{language.title}
-
-                        </button >
+                        key={language.id}
 
 
-                    </>
+                    >{language.title}
+
+                    </button >
+
+
+
 
                 )}
 

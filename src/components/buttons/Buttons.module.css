@@ -11,10 +11,31 @@ button {
     font-size: larger;
     color: white;
 
-    button:hover {
-        background-color: yellow;
-    }
 
+}
+
+.html {
+    background-color: red;
+}
+
+.css {
+    background-color: rgb(0, 68, 255);
+}
+
+.js {
+    background-color: orange;
+}
+
+.node {
+    background-color: rgb(0, 255, 251);
+}
+
+.express {
+    background-color: blueviolet;
+}
+
+.react {
+    background-color: rgb(0, 254, 13);
 }
 
 .selected {
@@ -26,7 +47,6 @@ button {
     font-size: larger;
     color: black;
 }
-
 
 .cardTitle {
     font-weight: bold;
