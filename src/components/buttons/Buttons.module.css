@@ -12,3 +12,13 @@ button {
     color: white;
 
 }
+
+.selected {
+    border: none;
+    margin-left: 1rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: yellow;
+    font-size: larger;
+    color: black;
+}
