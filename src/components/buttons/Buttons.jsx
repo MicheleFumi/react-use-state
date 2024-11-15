@@ -2,11 +2,12 @@ import languages from '../../data/languages.js'
 import style from './Buttons.module.css'
 import { useState } from 'react'
 export default function Buttons() {
-    const [selected, setSelected] = useState(0)
+    const [selected, setSelected] = useState(null)
     function handleClick(e) {
 
         const newSelected = Number(e.target.getAttribute('data-index'))
         setSelected(newSelected)
+
     }
     function handleHover(e) {
 
@@ -36,6 +37,7 @@ export default function Buttons() {
                 )}
 
                 <div className={style.card}>
+                    <div className={selected == null ? '' : `${style.hide}`}>nessun linguaggio selezionato</div>
                     {languages.map(language => <div key={language.id} className={selected == language.id ? `${style.cardTitle}` : `${style.hide}`}>{language.title}</div>)}
                     {languages.map(language => <div key={language.id} className={selected == language.id ? `${style.cardDescription}` : `${style.hide}`}>{language.description}</div>)}
                 </div>

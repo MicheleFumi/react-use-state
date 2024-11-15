@@ -11,6 +11,9 @@ button {
     font-size: larger;
     color: white;
 
+    button:hover {
+        background-color: yellow;
+    }
 
 }
 
